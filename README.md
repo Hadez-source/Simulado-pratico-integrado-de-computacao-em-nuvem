@@ -19,7 +19,7 @@ questão 2 - Qual a principal diferença de maquina virtual e container?
 Resposta: A maquina virtual é quando uma pessoa sacrifica parte da capacidade fisica do computador para ter outro sistema dentro da sua própria maquina, exemplificando seria como emular um sistema (criar uma maquina virtual), já o container permite você armazenar na nuvem um código ou um sistema inteiro dentro de um container onde você pode acessar de qualquer local caso queira, coisa que é impossivel com a maquina virtual que se limita há apenas o computador em que a maquina virtual está instalada.
 
 Parte 2 execução da Aplicação docker
-Código:
+Código Evidencia 1:
 cat> index.html <<EOF
 > Erick da Silva Rodrigues EOF
 > EOF
@@ -41,3 +41,7 @@ root@controlplane:~$ docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                                   NAMES
 b9827c95cf93   nginx:alpine   "/docker-entrypoint.…"   5 seconds ago   Up 4 seconds   80/tcp, 0.0.0.0:32768->8090/tcp, [::]:32768->8090/tcp   pedidos
 
+Evidencia 2
+curl http://localhost:8090
+curl: (7) Failed to connect to localhost port 8090 after 0 ms: Couldn't connect to server
+não consegui me conectar com o servidor.
