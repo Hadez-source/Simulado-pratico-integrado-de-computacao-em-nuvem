@@ -45,3 +45,18 @@ Evidencia 2
 curl http://localhost:8090
 curl: (7) Failed to connect to localhost port 8090 after 0 ms: Couldn't connect to server
 não consegui me conectar com o servidor.
+
+Parte 6 adiantamento:
+Questão 1:Qual a diferença entre uma Imagem docker e um container em execução?
+
+Resposta: A Imagem docker é oque vai ser guardado dentro do container servindo de referencia.
+
+Questão 2: qual a função de um deployment no kubernetes?
+
+Resposta: Criar pods, e exibir eles.
+
+Questão 3: Oque acontece quando você excluí um pod? porque isso ocorreu?
+
+Resposta: um dos três pods criados é apagado sobrando somente 2, podendo ser recuperado repetindo o comando "kubectl get pods"
+
+
